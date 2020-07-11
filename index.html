@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>The Digital Stop Watch</h1>
+    <!-- creating container -->
+    <div class="container">
+        <!-- creating seconds, mintus and hours -->
+        
+        <div id="display">
+            <div id="border" >
+        <span id="hr"> 00</span>
+            <span id="mint">00</span>
+                <span id="sec">00</span>
+                    <span id="msec">00</span>   
+            
+        </div>
+        </div>
+        
+        <!-- creating buttons start stop and reset -->
+        <div class="startstop">
+            <button id="startstop" onclick="startstop()" >Start</button>
+            <div id="border2">
+            <button id="reset" onclick="reset()">Reset
+            
+            </button>
+            <p id="refresh"></p>
+        </div>
+        </div>
+    </div>
+    
+</body>
+<script src="/js/app.js"></script>
+</html>
